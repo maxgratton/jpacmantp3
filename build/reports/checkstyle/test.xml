@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.17">
+<file name="/home/maxime/Documents/jpacman-master/src/test/java/nl/tudelft/jpacman/board/BasicSquare.java">
+</file>
+<file name="/home/maxime/Documents/jpacman-master/src/test/java/nl/tudelft/jpacman/board/BasicUnit.java">
+</file>
+<file name="/home/maxime/Documents/jpacman-master/src/test/java/nl/tudelft/jpacman/board/DirectionTest.java">
+</file>
+<file name="/home/maxime/Documents/jpacman-master/src/test/java/nl/tudelft/jpacman/board/OccupantTest.java">
+</file>
+<file name="/home/maxime/Documents/jpacman-master/src/test/java/nl/tudelft/jpacman/npc/ghost/GhostMapParser.java">
+</file>
+</checkstyle>
