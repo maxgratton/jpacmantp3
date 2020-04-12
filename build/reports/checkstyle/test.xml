@@ -8,6 +8,10 @@
 </file>
 <file name="/home/maxime/Documents/jpacman-master/src/test/java/nl/tudelft/jpacman/board/OccupantTest.java">
 </file>
+<file name="/home/maxime/Documents/jpacman-master/src/test/java/nl/tudelft/jpacman/level/PlayerTest.java">
+<error line="8" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="10" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
 <file name="/home/maxime/Documents/jpacman-master/src/test/java/nl/tudelft/jpacman/npc/ghost/GhostMapParser.java">
 </file>
 </checkstyle>

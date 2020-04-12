@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.board.SquareTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-10T00:41:55" hostname="maxime-OptiPlex-9020M" time="0.024">
+<testsuite name="nl.tudelft.jpacman.board.SquareTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-10T16:45:22" hostname="maxime-OptiPlex-9020M" time="0.004">
   <properties/>
   <testcase name="testLeave()" classname="nl.tudelft.jpacman.board.SquareTest" time="0.001"/>
-  <testcase name="testOrder()" classname="nl.tudelft.jpacman.board.SquareTest" time="0.0"/>
-  <testcase name="testOccupy()" classname="nl.tudelft.jpacman.board.SquareTest" time="0.021"/>
+  <testcase name="testOrder()" classname="nl.tudelft.jpacman.board.SquareTest" time="0.001"/>
+  <testcase name="testOccupy()" classname="nl.tudelft.jpacman.board.SquareTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

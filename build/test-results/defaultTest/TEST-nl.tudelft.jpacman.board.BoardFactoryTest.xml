@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.board.BoardFactoryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-04-10T00:41:55" hostname="maxime-OptiPlex-9020M" time="0.068">
+<testsuite name="nl.tudelft.jpacman.board.BoardFactoryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-04-10T16:45:22" hostname="maxime-OptiPlex-9020M" time="0.033">
   <properties/>
-  <testcase name="connectedEast()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.058"/>
-  <testcase name="connectedWest()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.001"/>
-  <testcase name="worldIsRound()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.004"/>
+  <testcase name="connectedEast()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.027"/>
+  <testcase name="connectedWest()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.0"/>
+  <testcase name="worldIsRound()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.002"/>
   <testcase name="connectedNorth()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.001"/>
-  <testcase name="connectedSouth()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.0"/>
+  <testcase name="connectedSouth()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
