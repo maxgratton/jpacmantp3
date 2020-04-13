@@ -172,19 +172,27 @@ public class CollisionInteractionMap implements CollisionMap {
         int index = 0;
         while (found.size() > index) {
             Class<?> current = found.get(index);
-            Class<?> superClass = current.getSuperclass();
-            if (superClass != null && Unit.class.isAssignableFrom(superClass)) {
-                found.add((Class<? extends Unit>) superClass);
-            }
-            for (Class<?> classInterface : current.getInterfaces()) {
-                if (Unit.class.isAssignableFrom(classInterface)) {
-                    found.add((Class<? extends Unit>) classInterface);
-                }
-            }
+            findSuperClasses(found, current);
+            findInterfaces(found, current);
             index++;
         }
 
         return found;
+    }
+
+    private void findInterfaces(List<Class<? extends Unit>> found, Class<?> current) {
+        for (Class<?> classInterface : current.getInterfaces()) {
+            if (Unit.class.isAssignableFrom(classInterface)) {
+                found.add((Class<? extends Unit>) classInterface);
+            }
+        }
+    }
+
+    private void findSuperClasses(List<Class<? extends Unit>> found, Class<?> current) {
+        Class<?> superClass = current.getSuperclass();
+        if (superClass != null && Unit.class.isAssignableFrom(superClass)) {
+            found.add((Class<? extends Unit>) superClass);
+        }
     }
 
     /**
