@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.board.DirectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-13T22:02:45" hostname="maxime-OptiPlex-9020M" time="0.009">
+<testsuite name="nl.tudelft.jpacman.board.DirectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-13T22:25:41" hostname="maxime-OptiPlex-9020M" time="0.007">
   <properties/>
-  <testcase name="testNorth()" classname="nl.tudelft.jpacman.board.DirectionTest" time="0.009"/>
+  <testcase name="testNorth()" classname="nl.tudelft.jpacman.board.DirectionTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

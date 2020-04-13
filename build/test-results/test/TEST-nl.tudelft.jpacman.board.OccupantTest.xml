@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.board.OccupantTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-13T22:02:45" hostname="maxime-OptiPlex-9020M" time="0.203">
+<testsuite name="nl.tudelft.jpacman.board.OccupantTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-13T22:25:41" hostname="maxime-OptiPlex-9020M" time="0.126">
   <properties/>
-  <testcase name="noStartSquare()" classname="nl.tudelft.jpacman.board.OccupantTest" time="0.198"/>
+  <testcase name="noStartSquare()" classname="nl.tudelft.jpacman.board.OccupantTest" time="0.121"/>
   <testcase name="testReoccupy()" classname="nl.tudelft.jpacman.board.OccupantTest" time="0.001"/>
   <testcase name="testOccupy()" classname="nl.tudelft.jpacman.board.OccupantTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

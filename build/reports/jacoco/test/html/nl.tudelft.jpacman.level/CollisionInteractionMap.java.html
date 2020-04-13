@@ -169,31 +169,35 @@ public class CollisionInteractionMap implements CollisionMap {
 <span class="nc" id="L169">        List&lt;Class&lt;? extends Unit&gt;&gt; found = new ArrayList&lt;&gt;();</span>
 <span class="nc" id="L170">        found.add(clazz);</span>
 
-<span class="nc" id="L172">        int index = 0;</span>
-<span class="nc bnc" id="L173" title="All 2 branches missed.">        while (found.size() &gt; index) {</span>
-<span class="nc" id="L174">            Class&lt;?&gt; current = found.get(index);</span>
-<span class="nc" id="L175">            findSuperClasses(found, current);</span>
-<span class="nc" id="L176">            findInterfaces(found, current);</span>
-<span class="nc" id="L177">            index++;</span>
-<span class="nc" id="L178">        }</span>
+<span class="nc" id="L172">        findInheritanceClasses(found);</span>
 
-<span class="nc" id="L180">        return found;</span>
+<span class="nc" id="L174">        return found;</span>
     }
 
+    private void findInheritanceClasses(List&lt;Class&lt;? extends Unit&gt;&gt; found) {
+<span class="nc" id="L178">        int index = 0;</span>
+<span class="nc bnc" id="L179" title="All 2 branches missed.">        while (found.size() &gt; index) {</span>
+<span class="nc" id="L180">            Class&lt;?&gt; current = found.get(index);</span>
+<span class="nc" id="L181">            findSuperClasses(found, current);</span>
+<span class="nc" id="L182">            findInterfaces(found, current);</span>
+<span class="nc" id="L183">            index++;</span>
+<span class="nc" id="L184">        }</span>
+<span class="nc" id="L185">    }</span>
+
     private void findInterfaces(List&lt;Class&lt;? extends Unit&gt;&gt; found, Class&lt;?&gt; current) {
-<span class="nc bnc" id="L184" title="All 2 branches missed.">        for (Class&lt;?&gt; classInterface : current.getInterfaces()) {</span>
-<span class="nc bnc" id="L185" title="All 2 branches missed.">            if (Unit.class.isAssignableFrom(classInterface)) {</span>
-<span class="nc" id="L186">                found.add((Class&lt;? extends Unit&gt;) classInterface);</span>
+<span class="nc bnc" id="L188" title="All 2 branches missed.">        for (Class&lt;?&gt; classInterface : current.getInterfaces()) {</span>
+<span class="nc bnc" id="L189" title="All 2 branches missed.">            if (Unit.class.isAssignableFrom(classInterface)) {</span>
+<span class="nc" id="L190">                found.add((Class&lt;? extends Unit&gt;) classInterface);</span>
             }
         }
-<span class="nc" id="L189">    }</span>
+<span class="nc" id="L193">    }</span>
 
     private void findSuperClasses(List&lt;Class&lt;? extends Unit&gt;&gt; found, Class&lt;?&gt; current) {
-<span class="nc" id="L192">        Class&lt;?&gt; superClass = current.getSuperclass();</span>
-<span class="nc bnc" id="L193" title="All 4 branches missed.">        if (superClass != null &amp;&amp; Unit.class.isAssignableFrom(superClass)) {</span>
-<span class="nc" id="L194">            found.add((Class&lt;? extends Unit&gt;) superClass);</span>
+<span class="nc" id="L196">        Class&lt;?&gt; superClass = current.getSuperclass();</span>
+<span class="nc bnc" id="L197" title="All 4 branches missed.">        if (superClass != null &amp;&amp; Unit.class.isAssignableFrom(superClass)) {</span>
+<span class="nc" id="L198">            found.add((Class&lt;? extends Unit&gt;) superClass);</span>
         }
-<span class="nc" id="L196">    }</span>
+<span class="nc" id="L200">    }</span>
 
     /**
      * Handles the collision between two colliding parties.
@@ -242,9 +246,9 @@ public class CollisionInteractionMap implements CollisionMap {
          * @param handler
          *            The symmetric handler for this collision.
          */
-<span class="nc" id="L245">        InverseCollisionHandler(CollisionHandler&lt;C2, C1&gt; handler) {</span>
-<span class="nc" id="L246">            this.handler = handler;</span>
-<span class="nc" id="L247">        }</span>
+<span class="nc" id="L249">        InverseCollisionHandler(CollisionHandler&lt;C2, C1&gt; handler) {</span>
+<span class="nc" id="L250">            this.handler = handler;</span>
+<span class="nc" id="L251">        }</span>
 
         /**
          * Handles this collision by flipping the collider and collidee, making
@@ -252,8 +256,8 @@ public class CollisionInteractionMap implements CollisionMap {
          */
         @Override
         public void handleCollision(C1 collider, C2 collidee) {
-<span class="nc" id="L255">            handler.handleCollision(collidee, collider);</span>
-<span class="nc" id="L256">        }</span>
+<span class="nc" id="L259">            handler.handleCollision(collidee, collider);</span>
+<span class="nc" id="L260">        }</span>
     }
 
 }
