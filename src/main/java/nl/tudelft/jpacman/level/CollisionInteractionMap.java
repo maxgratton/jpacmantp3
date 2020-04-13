@@ -170,14 +170,18 @@ public class CollisionInteractionMap implements CollisionMap {
         found.add(clazz);
 
         int index = 0;
+        findInheritanceClasses(found, index);
+
+        return found;
+    }
+
+    private void findInheritanceClasses(List<Class<? extends Unit>> found, int index) {
         while (found.size() > index) {
             Class<?> current = found.get(index);
             findSuperClasses(found, current);
             findInterfaces(found, current);
             index++;
         }
-
-        return found;
     }
 
     private void findInterfaces(List<Class<? extends Unit>> found, Class<?> current) {
